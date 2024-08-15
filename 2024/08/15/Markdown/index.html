@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Smoven</title>
+  <title>Markdown语法 | Smoven</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Smoven">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Markdown标题语法使用#号可表示1-6级标题，#号数量代表了标题的级别 在短语和单词下面添加任意数量的&#x3D;&#x3D;号来标识一级标题，或使用任意数量的–号来标识二级标题（可选语法不推荐）。 Markdown段落语法markdown段落没有特殊格式，直接使用空白行编写文字就好，不要使用制表符和空格进行缩进。 段落的换行是使用二个以上的空格加回车，或者段落后面使用一个空行来表示重新开始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="http://example.com/2024/08/15/Markdown/index.html">
 <meta property="og:site_name" content="Smoven">
+<meta property="og:description" content="Markdown标题语法使用#号可表示1-6级标题，#号数量代表了标题的级别 在短语和单词下面添加任意数量的&#x3D;&#x3D;号来标识一级标题，或使用任意数量的–号来标识二级标题（可选语法不推荐）。 Markdown段落语法markdown段落没有特殊格式，直接使用空白行编写文字就好，不要使用制表符和空格进行缩进。 段落的换行是使用二个以上的空格加回车，或者段落后面使用一个空行来表示重新开始">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/cs.png">
+<meta property="og:image" content="http://example.com/cs.png">
+<meta property="article:published_time" content="2024-08-15T13:40:51.000Z">
+<meta property="article:modified_time" content="2024-08-15T13:41:33.788Z">
 <meta property="article:author" content="wang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/cs.png">
   
     <link rel="alternate" href="/atom.xml" title="Smoven" type="application/atom+xml">
   
@@ -67,9 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Markdown" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Markdown" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/08/15/Markdown/" class="article-date">
   <time class="dt-published" datetime="2024-08-15T13:40:51.000Z" itemprop="datePublished">2024-08-15</time>
@@ -82,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/15/Markdown/">Markdown语法</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Markdown语法
     </h1>
   
 
@@ -214,72 +219,19 @@ Br5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQo
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/15/Network/" class="article-date">
-  <time class="dt-published" datetime="2024-08-15T13:40:51.000Z" itemprop="datePublished">2024-08-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/15/Network/">Network Tools</a>
-    </h1>
+    <a href="/2024/08/15/Network/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Network Tools</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="nc-ncat"><a href="#nc-ncat" class="headerlink" title="nc&#x2F;ncat"></a>nc&#x2F;ncat</h2><p>nc [option] [IP] [port]</p>
-<p>option<br>-v <em>显示详细信息</em><br>-l <em>监听模式</em><br>-u <em>使用UDP协议，默认TCP</em><br>-s addr <em>指定源地址</em><br>-p port <em>指定源端口</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># example</span></span><br><span class="line"><span class="comment"># 监听某个端口</span></span><br><span class="line">nc -l 10086</span><br><span class="line"><span class="comment"># 连接某个端口</span></span><br><span class="line">nc ip 10086</span><br><span class="line"><span class="comment"># 传输文件</span></span><br><span class="line">nc -l port &gt; file</span><br><span class="line">nc ip port &lt; file</span><br></pre></td></tr></table></figure>
-
-<h2 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h2><p>nmap端口状态</p>
-<ul>
-<li><strong>open</strong>:应用程序在该端口接收TCP连接或者UDP报文</li>
-<li><strong>closed</strong>:关闭的端口对于nmap也是可访问的，它接收nmap探测报文并作出响应。但没有应用程序在其上监听</li>
-<li><strong>filtered</strong>:由于包过滤阻止探测报文到达端口，nmap无法确定该端口是否开放。过滤可能来自专业的防火墙设备，路由规则 或者主机上的软件防火墙</li>
-<li><strong>unfiltered</strong>:未被过滤状态意味着端口可访问，但是nmap无法确定它是开放还是关闭。 只有用于映射防火墙规则集的ACK扫描才会把端口分类到这个状态</li>
-<li><strong>open | filtered</strong>:无法确定端口是开放还是被过滤， 开放的端口不响应就是一个例子。没有响应也可能意味着报文过滤器丢弃了探测报文或者它引发的任何反应。UDP,IP协议,FIN,Null等扫描会引起</li>
-<li><strong>closed | filtered</strong>:（关闭或者被过滤的）：无法确定端口是关闭的还是被过滤的</li>
-</ul>
-<p>nmap [Scan-Type] [option] [ip|net]<br>  -sn <em>ping扫描</em></p>
-<p>  -Pn <em>跳过ping扫描</em><br>  -sT <em>TCP协议扫描，默认扫描方式</em><br>  -sU <em>UDP协议扫描</em><br>  -sS <em>半开放扫描，只发送SYN包，不建立连接</em></p>
-<p>  -O <em>操作系统分析，需要TCP协议扫描</em></p>
-<p>  -p <em>扫描端口，默认扫描1-1024，多个端口以分号隔开，也可以通过破折号指定连续的端口</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># example</span></span><br><span class="line"><span class="comment"># 扫描tcp端口，默认扫描1-1024端口</span></span><br><span class="line">nmap ip</span><br><span class="line"><span class="comment"># 扫描主机存活</span></span><br><span class="line">nmap -sn ip/net</span><br><span class="line"><span class="comment"># 扫描全部端口，并不进行ping检测</span></span><br><span class="line">nmap -Pn ip -p 1-65535 </span><br></pre></td></tr></table></figure>
-
-<h2 id="iperf3"><a href="#iperf3" class="headerlink" title="iperf3"></a>iperf3</h2><p>iperf [option]<br>  -s <em>以server模式启动</em><br>  -c <em>以client模式启动</em></p>
-<p>通用参数<br>  -p <em>指定端口，默认5201</em></p>
-<p>client模式参数<br>  -u <em>使用udp协议，默认是tcp协议</em><br>  -b <em>指定带宽，udp默认1M，tcp不设上限</em><br>  -i second <em>时间间隔，单位秒</em><br>  -t second <em>测试时间，默认10秒</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 服务端</span></span><br><span class="line">iperf3 -s -p 10086</span><br><span class="line"><span class="comment"># 客户端测试TCP通信的最大速率</span></span><br><span class="line">iperf3 -c server_ip -p 10086</span><br><span class="line"><span class="comment"># 客户端UDP测试100M</span></span><br><span class="line">iperf3 -c server_ip -p 10086 -u -b 100M</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/15/Network/" data-id="clzvbxqxs0001n4q95bvcewt8" data-title="Network Tools" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
